@@ -89,3 +89,4 @@
     <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Git.svg" alt="git" width="50" height="50"/>
   </a>
 </p>
+![gifhhh](https://github.com/user-attachments/assets/ff692a20-2fe8-4bea-be17-5cac5cadb7b5)
