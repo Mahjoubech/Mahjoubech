@@ -11,7 +11,7 @@
 - ⚡ I'm a **Full Stack Developer** 
   
 - 🌱 I'm currently learning **Laravel, React, Vue.js**
-- 📝 I regularly share updates on [LinkedIn](https://linkedin.com/in/mahjoub-cherkaoui)
+- 📝 I regularly share updates on [LinkedIn](https://www.linkedin.com/in/mahjoub-cherkaoui-6b0198332/)
 - 💬 Ask me about **Web Development**
 - 📫 How to reach me **charkaouielmahjoub50@gmail.com**
   
@@ -82,19 +82,10 @@
   <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> 
     <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/React-Light.svg" alt="react" width="50" height="50"/>
   </a> 
-  <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Vue-Light.svg" alt="vue" width="50" height="50"/>
-  </a> 
   <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> 
     <img src="https://github.com/Scar1109/skill-icons/blob/main/icons/Figma-Light.svg" alt="figma" width="50" height="50"/>
   </a> 
   <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> 
     <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Git.svg" alt="git" width="50" height="50"/>
   </a>
-</p>
-
----
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahjoubech&theme=dark" alt="Streak Stats" />
 </p>
