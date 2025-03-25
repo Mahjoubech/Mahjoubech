@@ -1,79 +1,174 @@
-# Hi there! 👋 I'm Cherkaoui Mahjoub
+import React, { useState } from 'react';
+import { 
+  Code, 
+  Database, 
+  Globe, 
+  Server, 
+  Terminal, 
+  Layers, 
+  Cpu, 
+  GitHub, 
+  Linkedin, 
+  Mail, 
+  FileText 
+} from 'lucide-react';
 
-## 🚀 Full Stack Developer | Tech Enthusiast from Morocco
+const DeveloperProfile = () => {
+  const [activeSection, setActiveSection] = useState('about');
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=Passionate+Full+Stack+Developer;Web+Technology+Explorer;Open+Source+Contributor)](https://git.io/typing-svg)
+  const technologies = [
+    { name: 'Laravel', icon: <Code color="#FF2D20" size={48} />, level: 90 },
+    { name: 'React', icon: <Layers color="#61DAFB" size={48} />, level: 85 },
+    { name: 'Node.js', icon: <Server color="#339933" size={48} />, level: 80 },
+    { name: 'TypeScript', icon: <Terminal color="#3178C6" size={48} />, level: 75 }
+  ];
 
-### 🌟 About Me
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-black text-white p-8 font-sans">
+      {/* Header Section */}
+      <div className="flex items-center justify-between mb-12">
+        <div className="flex items-center space-x-4">
+          <img 
+            src="/api/placeholder/150/150" 
+            alt="Developer Profile" 
+            className="rounded-full border-4 border-purple-500 shadow-2xl transform hover:scale-110 transition-transform"
+          />
+          <div>
+            <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              Cherkaoui Mahjoub
+            </h1>
+            <p className="text-xl text-purple-300">
+              Full Stack Developer | Tech Innovator
+            </p>
+          </div>
+        </div>
+        <div className="flex space-x-4">
+          <a href="https://github.com/mahjoubech" target="_blank" className="hover:scale-125 transition-transform">
+            <GitHub size={36} className="text-white" />
+          </a>
+          <a href="https://linkedin.com/in/mahjoub-cherkaoui" target="_blank" className="hover:scale-125 transition-transform">
+            <Linkedin size={36} className="text-blue-500" />
+          </a>
+          <a href="mailto:charkaouielmahjoub50@gmail.com" className="hover:scale-125 transition-transform">
+            <Mail size={36} className="text-red-500" />
+          </a>
+        </div>
+      </div>
 
-I'm a dynamic full stack developer with a passion for creating innovative web solutions. Specializing in modern web technologies, I love transforming complex problems into elegant, efficient code.
+      {/* Navigation */}
+      <div className="flex justify-center mb-8 space-x-4">
+        {['about', 'skills', 'projects', 'contact'].map(section => (
+          <button 
+            key={section}
+            onClick={() => setActiveSection(section)}
+            className={`px-4 py-2 rounded-full transition-all ${
+              activeSection === section 
+                ? 'bg-purple-600 text-white' 
+                : 'bg-transparent text-purple-300 hover:bg-purple-800'
+            }`}
+          >
+            {section.charAt(0).toUpperCase() + section.slice(1)}
+          </button>
+        ))}
+      </div>
 
-### 🔧 Technologies & Tools
+      {/* Content Sections */}
+      {activeSection === 'about' && (
+        <div className="bg-black/50 p-8 rounded-2xl">
+          <h2 className="text-3xl mb-4 text-purple-400">About Me</h2>
+          <p className="text-lg text-gray-300">
+            Passionate Full Stack Developer from Morocco, transforming complex ideas 
+            into elegant digital solutions. With expertise in Laravel, React, and 
+            cutting-edge web technologies, I create innovative and performant web applications.
+          </p>
+        </div>
+      )}
 
-![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+      {activeSection === 'skills' && (
+        <div className="grid grid-cols-2 gap-8">
+          <div className="bg-black/50 p-8 rounded-2xl">
+            <h2 className="text-3xl mb-6 text-purple-400">Technologies</h2>
+            {technologies.map((tech, index) => (
+              <div key={index} className="mb-4">
+                <div className="flex items-center mb-2">
+                  {tech.icon}
+                  <span className="ml-4 text-xl">{tech.name}</span>
+                </div>
+                <div className="w-full bg-gray-700 rounded-full h-4">
+                  <div 
+                    className="bg-purple-600 h-4 rounded-full" 
+                    style={{width: `${tech.level}%`}}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="bg-black/50 p-8 rounded-2xl">
+            <h2 className="text-3xl mb-6 text-purple-400">Development Skills</h2>
+            <ul className="space-y-2">
+              {[
+                'Full Stack Development',
+                'Responsive Web Design',
+                'API Integration',
+                'Performance Optimization',
+                'Cloud Deployment'
+              ].map((skill, index) => (
+                <li 
+                  key={index} 
+                  className="flex items-center text-lg text-gray-300 hover:text-purple-400 transition-colors"
+                >
+                  <Cpu size={24} className="mr-3 text-purple-500" />
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
 
-### 💻 Skills Breakdown
+      {activeSection === 'projects' && (
+        <div className="bg-black/50 p-8 rounded-2xl">
+          <h2 className="text-3xl mb-6 text-purple-400">Featured Projects</h2>
+          <div className="grid grid-cols-3 gap-6">
+            {[
+              { name: 'Portfolio Website', tech: 'React, Tailwind' },
+              { name: 'E-Commerce Platform', tech: 'Laravel, Vue.js' },
+              { name: 'API Dashboard', tech: 'Node.js, Express' }
+            ].map((project, index) => (
+              <div 
+                key={index} 
+                className="bg-purple-900/30 p-6 rounded-xl hover:scale-105 transition-transform"
+              >
+                <FileText size={48} className="text-purple-500 mb-4" />
+                <h3 className="text-xl font-bold mb-2">{project.name}</h3>
+                <p className="text-gray-400">{project.tech}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
-| 🌐 Web Technologies | 📊 Databases | 🛠 Tools & Platforms |
-|---------------------|--------------|---------------------|
-| HTML5 | MySQL | Docker |
-| CSS3 | PostgreSQL | Git |
-| JavaScript | MongoDB | Postman |
-| PHP | MS SQL | Linux |
-| Laravel | SQLite | Figma |
+      {activeSection === 'contact' && (
+        <div className="bg-black/50 p-8 rounded-2xl text-center">
+          <h2 className="text-3xl mb-6 text-purple-400">Let's Connect</h2>
+          <p className="text-xl mb-6 text-gray-300">
+            Open to collaboration, freelance opportunities, and exciting projects.
+          </p>
+          <a 
+            href="mailto:charkaouielmahjoub50@gmail.com" 
+            className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full text-xl transition-colors"
+          >
+            Contact Me
+          </a>
+        </div>
+      )}
 
-### 🌱 Currently Learning
+      {/* Footer */}
+      <div className="mt-8 text-center text-gray-500">
+        © 2024 Cherkaoui Mahjoub. All Rights Reserved.
+      </div>
+    </div>
+  );
+};
 
-- Advanced React Patterns
-- Microservices Architecture
-- Cloud Native Development
-
-### 📈 GitHub Stats
-
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=mahjoubech&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true&theme=radical" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahjoubech&langs_count=8&layout=compact&theme=radical&hide_border=true" />
-</p>
-
-### 🏆 GitHub Trophies
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=mahjoubech&theme=radical&column=7)](https://github.com/ryo-ma/github-profile-trophy)
-
-### 📫 Let's Connect!
-
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mahjoub-cherkaoui)
-[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:charkaouielmahjoub50@gmail.com)
-[![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=for-the-badge&logo=react&logoColor=white)](https://mahjoubech.github.io/PortFolio/)
-
-### 🔥 Streak Stats
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahjoubech&theme=radical" alt="mahjoubech" />
-</p>
-
-### 🕹️ Fun Fact
-
-```javascript
-const aboutMe = {
-  pronouns: "He/Him",
-  code: ["JavaScript", "PHP", "TypeScript", "React", "Vue"],
-  techCommunities: {
-    contributor: "Open Source",
-    learner: "Always Exploring New Technologies"
-  },
-  challenge: "Currently pushing my limits in full-stack development!"
-}
-```
-
----
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=mahjoubech&color=blueviolet" alt="Profile Views" />
-</p>
-
-*Crafted with ❤️ by Cherkaoui Mahjoub*
+export default DeveloperProfile;
