@@ -1,174 +1,31 @@
-import React, { useState } from 'react';
-import { 
-  Code, 
-  Database, 
-  Globe, 
-  Server, 
-  Terminal, 
-  Layers, 
-  Cpu, 
-  GitHub, 
-  Linkedin, 
-  Mail, 
-  FileText 
-} from 'lucide-react';
+<h1 align="center">Hi 👋, I'm Cherkaoui Mahjoub</h1>
+<h3 align="center">A passionate Full Stack Developer from Morrocco</h3>
 
-const DeveloperProfile = () => {
-  const [activeSection, setActiveSection] = useState('about');
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=mahjoubech&label=Profile%20views&color=0e75b6&style=flat" alt="mahjoubech" /> </p>
 
-  const technologies = [
-    { name: 'Laravel', icon: <Code color="#FF2D20" size={48} />, level: 90 },
-    { name: 'React', icon: <Layers color="#61DAFB" size={48} />, level: 85 },
-    { name: 'Node.js', icon: <Server color="#339933" size={48} />, level: 80 },
-    { name: 'TypeScript', icon: <Terminal color="#3178C6" size={48} />, level: 75 }
-  ];
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mahjoubech" alt="mahjoubech" /></a> </p>
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-black text-white p-8 font-sans">
-      {/* Header Section */}
-      <div className="flex items-center justify-between mb-12">
-        <div className="flex items-center space-x-4">
-          <img 
-            src="/api/placeholder/150/150" 
-            alt="Developer Profile" 
-            className="rounded-full border-4 border-purple-500 shadow-2xl transform hover:scale-110 transition-transform"
-          />
-          <div>
-            <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              Cherkaoui Mahjoub
-            </h1>
-            <p className="text-xl text-purple-300">
-              Full Stack Developer | Tech Innovator
-            </p>
-          </div>
-        </div>
-        <div className="flex space-x-4">
-          <a href="https://github.com/mahjoubech" target="_blank" className="hover:scale-125 transition-transform">
-            <GitHub size={36} className="text-white" />
-          </a>
-          <a href="https://linkedin.com/in/mahjoub-cherkaoui" target="_blank" className="hover:scale-125 transition-transform">
-            <Linkedin size={36} className="text-blue-500" />
-          </a>
-          <a href="mailto:charkaouielmahjoub50@gmail.com" className="hover:scale-125 transition-transform">
-            <Mail size={36} className="text-red-500" />
-          </a>
-        </div>
-      </div>
+<p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
-      {/* Navigation */}
-      <div className="flex justify-center mb-8 space-x-4">
-        {['about', 'skills', 'projects', 'contact'].map(section => (
-          <button 
-            key={section}
-            onClick={() => setActiveSection(section)}
-            className={`px-4 py-2 rounded-full transition-all ${
-              activeSection === section 
-                ? 'bg-purple-600 text-white' 
-                : 'bg-transparent text-purple-300 hover:bg-purple-800'
-            }`}
-          >
-            {section.charAt(0).toUpperCase() + section.slice(1)}
-          </button>
-        ))}
-      </div>
+- 🌱 I’m currently learning **Laravel , React , Vue ,Tailwindcss**
 
-      {/* Content Sections */}
-      {activeSection === 'about' && (
-        <div className="bg-black/50 p-8 rounded-2xl">
-          <h2 className="text-3xl mb-4 text-purple-400">About Me</h2>
-          <p className="text-lg text-gray-300">
-            Passionate Full Stack Developer from Morocco, transforming complex ideas 
-            into elegant digital solutions. With expertise in Laravel, React, and 
-            cutting-edge web technologies, I create innovative and performant web applications.
-          </p>
-        </div>
-      )}
+- 👨‍💻 All of my projects are available at [https://mahjoubech.github.io/PortFolio/](https://mahjoubech.github.io/PortFolio/)
 
-      {activeSection === 'skills' && (
-        <div className="grid grid-cols-2 gap-8">
-          <div className="bg-black/50 p-8 rounded-2xl">
-            <h2 className="text-3xl mb-6 text-purple-400">Technologies</h2>
-            {technologies.map((tech, index) => (
-              <div key={index} className="mb-4">
-                <div className="flex items-center mb-2">
-                  {tech.icon}
-                  <span className="ml-4 text-xl">{tech.name}</span>
-                </div>
-                <div className="w-full bg-gray-700 rounded-full h-4">
-                  <div 
-                    className="bg-purple-600 h-4 rounded-full" 
-                    style={{width: `${tech.level}%`}}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="bg-black/50 p-8 rounded-2xl">
-            <h2 className="text-3xl mb-6 text-purple-400">Development Skills</h2>
-            <ul className="space-y-2">
-              {[
-                'Full Stack Development',
-                'Responsive Web Design',
-                'API Integration',
-                'Performance Optimization',
-                'Cloud Deployment'
-              ].map((skill, index) => (
-                <li 
-                  key={index} 
-                  className="flex items-center text-lg text-gray-300 hover:text-purple-400 transition-colors"
-                >
-                  <Cpu size={24} className="mr-3 text-purple-500" />
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      )}
+- 📫 How to reach me **charkaouielmahjoub50@gmail.com**
 
-      {activeSection === 'projects' && (
-        <div className="bg-black/50 p-8 rounded-2xl">
-          <h2 className="text-3xl mb-6 text-purple-400">Featured Projects</h2>
-          <div className="grid grid-cols-3 gap-6">
-            {[
-              { name: 'Portfolio Website', tech: 'React, Tailwind' },
-              { name: 'E-Commerce Platform', tech: 'Laravel, Vue.js' },
-              { name: 'API Dashboard', tech: 'Node.js, Express' }
-            ].map((project, index) => (
-              <div 
-                key={index} 
-                className="bg-purple-900/30 p-6 rounded-xl hover:scale-105 transition-transform"
-              >
-                <FileText size={48} className="text-purple-500 mb-4" />
-                <h3 className="text-xl font-bold mb-2">{project.name}</h3>
-                <p className="text-gray-400">{project.tech}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/mahjoub cherkaoui" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="mahjoub cherkaoui" height="30" width="40" /></a>
+<a href="https://fb.com/mahjoub cherkaoui" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="mahjoub cherkaoui" height="30" width="40" /></a>
+<a href="https://instagram.com/gal1y_sss" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="gal1y_sss" height="30" width="40" /></a>
+<a href="https://discord.gg/ECH-CHERKAOUI" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="ECH-CHERKAOUI" height="30" width="40" /></a>
+</p>
 
-      {activeSection === 'contact' && (
-        <div className="bg-black/50 p-8 rounded-2xl text-center">
-          <h2 className="text-3xl mb-6 text-purple-400">Let's Connect</h2>
-          <p className="text-xl mb-6 text-gray-300">
-            Open to collaboration, freelance opportunities, and exciting projects.
-          </p>
-          <a 
-            href="mailto:charkaouielmahjoub50@gmail.com" 
-            className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full text-xl transition-colors"
-          >
-            Contact Me
-          </a>
-        </div>
-      )}
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"> <img src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://jestjs.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" width="40" height="40"/> </a> <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> </a> </p>
 
-      {/* Footer */}
-      <div className="mt-8 text-center text-gray-500">
-        © 2024 Cherkaoui Mahjoub. All Rights Reserved.
-      </div>
-    </div>
-  );
-};
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=mahjoubech&show_icons=true&locale=en&layout=compact" alt="mahjoubech" /></p>
 
-export default DeveloperProfile;
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mahjoubech&show_icons=true&locale=en" alt="mahjoubech" /></p>
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mahjoubech&" alt="mahjoubech" /></p>
