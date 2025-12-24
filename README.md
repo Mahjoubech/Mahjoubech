@@ -67,27 +67,29 @@
 
 <h3 align="center">Languages and Tools:</h3>
 <p align="center">
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/JavaScript.svg" alt="javascript" width="50" height="50"/>
-  </a> 
-  <a href="https://laravel.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Laravel-Light.svg" alt="laravel" width="50" height="50"/>
-  </a> 
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/HTML.svg" alt="html5" width="50" height="50"/>
-  </a> 
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/CSS.svg" alt="css3" width="50" height="50"/>
-  </a> 
-  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/React-Light.svg" alt="react" width="50" height="50"/>
-  </a> 
-  <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/Scar1109/skill-icons/blob/main/icons/Figma-Light.svg" alt="figma" width="50" height="50"/>
-  </a> 
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Git.svg" alt="git" width="50" height="50"/>
-  </a>
+   <!-- Backend -->
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Java-Light.svg" width="50"/>
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Spring-Light.svg" width="50"/>
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Laravel-Light.svg" width="50"/>
+
+  <!-- Frontend -->
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Angular-Light.svg" width="50"/>
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/VueJS-Light.svg" width="50"/>
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/NuxtJS-Light.svg" width="50"/>
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/React-Light.svg" width="50"/>
+
+  <!-- Databases -->
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/MySQL-Light.svg" width="50"/>
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/PostgreSQL-Light.svg" width="50"/>
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Oracle-Light.svg" width="50"/>
+
+  <!-- Tools -->
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Git.svg" width="50"/>
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Github-Light.svg" width="50"/>
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Jira-Light.svg" width="50"/>
+  <img src="https://github.com/Scar1109/skill-icons/blob/main/icons/Figma-Light.svg" width="50"/>
+</p>
+
 </p>
 <p align="center">
   <img src="https://i.pinimg.com/originals/e1/a7/81/e1a781c2cfc49e4f02cc72293e853b05.gif" width="800" alt="Coding Animation"/>
