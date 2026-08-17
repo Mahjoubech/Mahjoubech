@@ -13,7 +13,7 @@
 - 🌱 I'm currently learning **Laravel, React, Vue.js**
 - 📝 I regularly share updates on [LinkedIn](https://www.linkedin.com/in/mahjoub-cherkaoui-6b0198332/)
 - 💬 Ask me about **Web Development**
-- 📫 How to reach me **charkaouielmahjoub50@gmail.com**
+- 📫 How to reach me **mahjoubcherkaoui1@gmail.com**
   
 - ⚡ Fun fact **I turn coffee into code 💻**
 </td>
@@ -55,10 +55,10 @@
   <a href="https://linkedin.com/in/mahjoub-cherkaoui" target="blank">
     <img align="center" src="https://github.com/tandpfun/skill-icons/blob/main/icons/LinkedIn.svg" alt="LinkedIn" height="50" width="50" />
   </a>
- <a href="mailto:charkaouielmahjoub50@gmail.com" target="blank">
+ <a href="mailto:mahjoubcherkaoui1@gmail.com" target="blank">
     <img align="center" src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail" height="50" width="50" />
   </a>
-  <a href="https://discord.com/users/ECH-CHERKAOUI" target="blank">
+  <a href="https://discord.com/users/charkaoui24" target="blank">
     <img align="center" src="https://github.com/tandpfun/skill-icons/blob/main/icons/Discord.svg" alt="Discord" height="50" width="50" />
   </a>
 </p>
